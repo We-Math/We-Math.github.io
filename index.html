@@ -310,6 +310,15 @@
             pathways for advancements in visual mathematical reasoning for LMMs.
           </p>
         </div>
+        <br><br>
+        <div class="content has-text-centered">
+          <img src="static/images/fig1-3_res.png" width="100%"/>
+          <p>
+            Overview of LMMs' performances on <span class="wemath"> We-Math</span>. Figures from left to right illustrates the
+            (1) accuracy of different LMMs on various problem-solving steps, (2) the performance in different
+            visual mathematics categories and (3) the result in knowledge based reasoning evaluation.
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Abstract. -->
@@ -352,7 +361,6 @@
             process, we heuristically introduce descriptions for <b>67 knowledge concepts</b> from Wikipedia and 
             textbooks, thereby providing essential knowledge support for the reasoning processes of LMMs.
           </p>
-
           <!--carousel-->
           <div id="overview-carousel" class="carousel results-carousel">
             <div class="box m-5">
@@ -365,34 +373,6 @@
               <div class="content has-text-centered">
                 <img src="static/images/step_3.png" alt="arithmetic reasoning" width="90%"/>
                 <p> The pipeline of knowledge-based data decomposition (an example of a three-step problem in <span class="wemath" style="vertical-align: middle">We-Math</span>). </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section>
-  <!--static-->
-  <div class="container">
-    <div class="columns is-centered has-text-centered m-6">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Statistics</h2>
-        <div class="content has-text-justified">
-          <!--Statistics result-->
-          <div id="results-carousel" class="carousel results-carousel">
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/key.png" width="50%"/>
-                <p> Key statistics of <span class="wemath" style="vertical-align: middle">We-Math</span>. </p>
-              </div>
-            </div>
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/question_length_distribution.png" width="90%"/>
-                <p> The distribution of the number of words per question in <span class="wemath" style="vertical-align: middle">We-Math</span>. 
-                  <br>Questions with a length greater than 80 are categorized as 81 for visualization simplicity.</p>
               </div>
             </div>
           </div>
@@ -1149,7 +1129,7 @@
             </tr>
           </table>
           <div>
-            <p>🚨 To submit your results to the leaderboard, please send to <a href="">this email</a> with your result json files.</p>
+            <p>🚨 To submit your results to the leaderboard, please send to <a href="mailto:qrq@bupt.edu.cn">this email</a> with your result json files.</p>
           </div>
         </div>
       </div>
@@ -1163,42 +1143,14 @@
   <div class="container">
     <div class="columns is-centered has-text-centered m-6">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Experimental Analysis</h2>
+        <h2 class="title is-3">Results on Existing Foundation Models</h2>
         <div class="content has-text-justified">
-          <!--<p>
-            <b>Larger Parameter Scales in LLMs generally achieve Better Generalization Abilites.</b><br>
-          
-            <b>LMMs excel in Calculation but struggle with Fine-grained Visual Measurement.</b><br>
-
-            <b>LMMs exhibit Strong Potential for Parameter Compression.</b><br>
-
-            <b>IK is the Greatest Vulnerability of LMMs.</b><br>
-
-            <b>GPT-4o's Main Challenge has gradually shifted from IK to IG, 
-              highlighting it as the First LMM towards the  Knowledge Generalization Stage.</b><pr>
-          </p>
-          <br>-->
-          <!--把文字加到图像的下面 再确定一下-->
           <!--img show case-->
           <div id="results-carousel" class="carousel results-carousel">
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/fig6-3leida_res.png" width="110%"/>
-                <p> The visualization of different LMMs' performances on each category. <br>
-                  <b>LMMs excel in Calculation but struggle with Fine-grained Visual Measurement.</b><br>
-                  Focusing on different math categories, 
-                  GPT-4o still maintains impressive results across various subfields. 
-                  In contrast, other LMMs generally struggle with "Angle Measurement" and
-                  "Unit Conversion". After analyzing these cases, we reveals that the main challenge for LMMs
-                  lies in their inability to perform precise visual angle and unit measurements. Furthermore, most
-                  LMMs demonstrate better proficiency in calculation</p>
-              </div>
-            </div>
-            <div class="box m-5">
-              <div class="content has-text-centered">
-                <img src="static/images/Leaderboard.png" width="110%"/>
-                <p> The Leaderboard of different LMMs under the strict and loose metric (average score %). 
-                  ~ represents an approximate estimate of the total parameters nums in LMMs. </p>
+                <img src="static/images/fig6-3leida_res.png" width="90%"/>
+                <p> The visualization of different LMMs' performances on each category.</p>
               </div>
             </div>
             <div class="box m-5">
@@ -1211,6 +1163,13 @@
               <div class="content has-text-centered">
                 <img src="static/images/fig9_loose.png" width="90%"/>
                 <p> The performance of different LMMs on four-dimensional metrics under loose metric. </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/Leaderboard.png" width="110%"/>
+                <p> The Leaderboard of different LMMs under the strict and loose metric (average score %). 
+                  ~ represents an approximate estimate of the total parameters nums in LMMs. </p>
               </div>
             </div>
           </div>
@@ -1226,46 +1185,74 @@
   <div class="container">
     <div class="columns is-centered has-text-centered m-6">
       <div class="column is-four-fifths">
-        <h2 class="title is-3" id="examples">Examples</h2>
+        <h2 class="title is-3" id="examples">Knowledge Card</h2>
         <div class="content has-text-justified">
-          <!--<p>
-            <b>Larger Parameter Scales in LLMs generally achieve Better Generalization Abilites.</b><br>
-          
-            <b>LMMs excel in Calculation but struggle with Fine-grained Visual Measurement.</b><br>
-
-            <b>LMMs exhibit Strong Potential for Parameter Compression.</b><br>
-
-            <b>IK is the Greatest Vulnerability of LMMs.</b><br>
-
-            <b>GPT-4o's Main Challenge has gradually shifted from IK to IG, 
-              highlighting it as the First LMM towards the  Knowledge Generalization Stage.</b><pr>
-          </p>
-          <br>-->
-          <!--把文字加到图像的下面 再确定一下-->
           <!--img show case-->
           <div id="results-carousel" class="carousel results-carousel">
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/.png" width="110%"/>
-                <p> Example. </p>
+                <img src="static/images/card1_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Angles and Length". </p>
               </div>
             </div>
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/.png" width="110%"/>
-                <p> Example. </p>
+                <img src="static/images/card2_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Correspondence of Coordinates and Positions". </p>
               </div>
             </div>
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/.png" width="110%"/>
-                <p> Example. </p>
+                <img src="static/images/card3_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Basic Transformations of Figures". </p>
               </div>
             </div>
             <div class="box m-5">
               <div class="content has-text-centered">
-                <img src="static/images/.png" width="110%"/>
-                <p> Example. </p>
+                <img src="static/images/card4_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Cutting and Combining of Figures". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card5_res.png" width="80%"/>
+                <p> The description of the knowledge concepts "Direction" and "Position". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card8_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Route Map". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card9_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Understanding and Conversion of Units". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card6_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Calculation of Solid Figures". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card7_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Calculation of Plane Figures". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card10_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Understanding of Plane Figures". </p>
+              </div>
+            </div>
+            <div class="box m-5">
+              <div class="content has-text-centered">
+                <img src="static/images/card11_res.png" width="80%"/>
+                <p> The description of the knowledge concept "Understanding of Solid Figures". </p>
               </div>
             </div>
           </div>
@@ -1274,7 +1261,6 @@
     </div>
   </div>
 </section>
-
 
 <!-----------------------------------------------结束部分------------------------------------------------------>
 <section class="section" id="BibTeX">
