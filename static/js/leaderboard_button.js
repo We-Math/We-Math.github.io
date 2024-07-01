@@ -2,10 +2,10 @@
 function changeButtonText() {
     var button = document.getElementById('toggleButton');
     //change display content
-    if (button.innerHTML.includes("Validation Set Leaderboard")) {
-      button.innerHTML = "<b style='font-size: larger;'>Test Set Leaderboard</b> (Click to Switch)";
+    if (button.innerHTML.includes("Metric Evaluation Leaderboard")) {
+      button.innerHTML = "<b style='font-size: larger;'>Subset Accuracy Leaderboard</b> (Click to Switch)";
     } else {
-      button.innerHTML = "<b style='font-size: larger;'>Validation Set Leaderboard</b> (Click to Switch)";
+      button.innerHTML = "<b style='font-size: larger;'>Metric Evaluation Leaderboard</b> (Click to Switch)";
     }
 }
 
